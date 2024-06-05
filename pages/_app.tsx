@@ -7,7 +7,7 @@ import { CssBaseline } from "@mui/material";
 export default function App({ Component, pageProps }: AppProps) {
   // @ts-ignore
   const [theme, setTheme] = useState(createTheme(light));
-  console.log("App COMPONENT - PAGES ROUTER");
+  // console.log("App COMPONENT - PAGES ROUTER");
 
   return (
     <ThemeProvider theme={theme}>
