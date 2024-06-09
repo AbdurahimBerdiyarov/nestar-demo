@@ -7,7 +7,7 @@ const PropertyDetail: NextPage = () => {
   return (
     <>
       {/* <Stack sx={{ background: red[300] }}>Header Basic</Stack> */}
-      <Container>PROPERTY DETAIL </Container>
+      <Container>PROPERTY DETAIL</Container>
       {/* <Stack sx={{ background: brown[300] }}>Footer</Stack> */}
     </>
   );
