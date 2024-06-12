@@ -21,7 +21,8 @@ const withLayoutBasic = (Component: any) => {
             className={"header-basic"}
             style={{
               backgroundImage: `url(/img/banner/properties.png)`,
-              backgraoudSize: "cover",
+              // backgroundSize: "cover",
+              backgroundSize: "cover",
               boxShadow: "inset 10px 40px 150px 40px rgb(24 22 36)",
             }}
           >
@@ -36,7 +37,6 @@ const withLayoutBasic = (Component: any) => {
           </Stack>
 
           <Stack id={"footer"}>
-            {" "}
             <Footer />
           </Stack>
         </Stack>

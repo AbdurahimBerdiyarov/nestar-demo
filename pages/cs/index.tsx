@@ -1,4 +1,4 @@
-import withLayoutBasic from "@/lib/components/layout/LayoutBasic";
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Stack } from "@mui/material";
 import { NextPage } from "next";
 import { useState } from "react";
