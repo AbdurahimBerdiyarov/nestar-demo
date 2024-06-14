@@ -27,7 +27,7 @@ const PropertyCard = () => {
         </Box>
 
         <Box className={"price-box"}>
-          <Typography>$750000</Typography>
+          <Typography>$780000</Typography>
         </Box>
       </Stack>
       <Stack className="bottom">

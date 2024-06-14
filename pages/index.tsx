@@ -10,17 +10,35 @@ import PopularProperties from "@/libs/components/homepage/PopularProperties";
 import Advertisement from "@/libs/components/homepage/Advertisement";
 import TopProperties from "@/libs/components/homepage/TopProperties";
 import TopAgents from "@/libs/components/homepage/TopAgents";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 
 const Home: NextPage = () => {
-  return (
-    <Stack className={"home-page"}>
-      <TrendProperties />
-      <PopularProperties />
-      <Advertisement />
-      <TopProperties />
-      <TopAgents />
-    </Stack>
-  );
+  const device = useDeviceDetect();
+
+  if (device === "mobile") {
+    return (
+      <Stack className={"home-page"}>
+        HOMEPAGE MOBILE
+        {/* <TrendProperties />
+        <PopularProperties />
+        <Advertisement />
+        <TopProperties />
+        <TopAgents /> */}
+      </Stack>
+    );
+  } else {
+    return (
+      <Stack className={"home-page"}>
+        <TrendProperties />
+        <PopularProperties />
+        <Advertisement />
+        <TopProperties />
+        <TopAgents />
+        {/* <Events />
+        <CommunityBoards /> */}
+      </Stack>
+    );
+  }
 };
 
 export default withLayoutMain(Home);
